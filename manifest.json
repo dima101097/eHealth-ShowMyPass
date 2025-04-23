@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "eHealth ShowMyPass",
+    "version": "1.0",
+    "description": "Додає кнопку показу/приховування пароля на eHealth.gov.ua",
+    "icons": {
+      "128": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://auth.ehealth.gov.ua/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "permissions": []
+  }
+  
